@@ -1,0 +1,647 @@
+body {
+  /*background-image: url('/images/luzEditada.png');  */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área del body */
+  background-position: center; /* Centra la imagen en el body */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin-top: 30%;
+  background-color: #e1f0ff;
+}
+  
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor principal de la barra de navegación */
+.navbar {
+  margin-top: 30%; /* Ajusta el margen superior según sea necesario */
+  background-color: #36cc9a; /* Color de fondo para la barra de navegación */
+  padding: 0 20px; /* Ajusta el espaciado interno alrededor del contenido */
+  border-radius: 45px; /* Bordes redondeados del contenedor */
+  width: 60%; /* Ajusta el ancho para que sea más flexible en pantallas pequeñas */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  margin: 0 auto; /* Centra la barra de navegación horizontalmente */
+  box-shadow: 0 2px 4px rgba(243, 241, 241, 0.1); /* Opcional: sombra para dar profundidad */
+  height: 100px; /* Altura fija para la barra de navegación */
+  display: flex; /* Usar Flexbox para alinear el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido (opcional) */
+}
+
+/* Estilos para la lista de elementos en la barra de navegación */
+.navbar-list {
+  list-style-type: none; /* Elimina los puntos de lista predeterminados */
+  margin: 0; /* Elimina el margen predeterminado de la lista */
+  padding: 0; /* Elimina el padding predeterminado de la lista */
+  display: flex; /* Usa Flexbox para alinear los elementos en una fila */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  gap: 20px; /* Espacio entre los elementos en pantallas pequeñas */
+}
+
+/* Estilos para cada elemento de la lista en la barra de navegación */
+.navbar-item {
+  margin-right: 0; /* Elimina el margen a la derecha en pantallas pequeñas */
+ 
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar-link {
+  color: rgb(0, 0, 0); /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  font-size: 20px; /* Tamaño de fuente de los enlaces */
+  padding: 20px 30px; /* Espaciado interno del enlace */
+  border: 10px solid transparent; /* Borde transparente para el estado normal */
+  border-radius: 50px; /* Bordes redondeados del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Transiciones suaves */
+  
+}
+
+/* Estilos para los enlaces cuando se pasa el cursor sobre ellos */
+.navbar-link:hover {
+  color: aqua; /* Color del texto cuando se pasa el cursor sobre el enlace */
+  background-color: #666; /* Color de fondo cuando se pasa el cursor sobre el enlace */
+  border: 2px solid aqua; /* Borde alrededor del "botón" al pasar el cursor sobre él */
+  border-radius: 30px; /* Bordes redondeados del "botón" al pasar el cursor sobre él */
+}
+
+/* Responsividad para pantallas pequeñas */
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 5%;
+    padding: 10px; /* Ajusta el espaciado interno en pantallas pequeñas */
+    width: 100%; /* Asegura que la barra de navegación ocupe el ancho completo */
+    height: auto; /* Permite que la altura sea automática si el contenido cambia */
+  }
+
+  @media (max-width: 900px) {
+    .navbar {
+      margin-top: 5%;
+      padding: 10px; /* Ajusta el espaciado interno en pantallas pequeñas */
+      width: 100%; /* Asegura que la barra de navegación ocupe el ancho completo */
+      height: auto; /* Permite que la altura sea automática si el contenido cambia */
+    }
+  }
+
+
+
+
+  
+
+  .navbar-list {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente en columnas */
+    gap: 15px; /* Espacio entre los elementos en pantallas pequeñas */
+  }
+
+  .navbar-item {
+    margin-right: 0; /* Elimina el margen a la derecha en pantallas pequeñas */
+    margin-bottom: 0; /* Elimina el margen inferior en pantallas pequeñas */
+    font-weight: 900;
+  }
+
+  .navbar-link {
+    padding: 10px 20px; /* Ajusta el espaciado interno del enlace en pantallas pequeñas */
+  }
+
+
+  
+
+}
+
+
+
+
+/* Estilos para el contenedor del formulario de autenticación */
+.authentication-container {
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background: url('/images/LuzEditada.png') no-repeat center center;
+  background-size: cover; /* Ajusta la imagen de fondo */
+  color: black; /* Color del texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el formulario de autenticación */
+.authentication-form {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+/* Estilos para las etiquetas del formulario */
+.authentication-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: beige;
+}
+
+/* Estilos para los campos de entrada */
+.authentication-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Estilos para el botón de envío */
+.authentication-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #36cc9a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.authentication-button:hover {
+  background-color: #2a9d8f;
+}
+
+/* Estilos para los mensajes de éxito y error */
+.authentication-message {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.authentication-message.success {
+  color: #10ff18; 
+  font-size: 40px;
+}
+
+.authentication-message.error {
+  color: red; 
+  font-size: 40px;
+}
+
+
+
+
+
+.titulo {
+  font-size: 4vw; /* Tamaño de fuente en función del ancho de la ventana */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin: 0; /* Eliminar margen por defecto para centrar mejor */
+  margin-top: 3vw; /* Margen superior en función del ancho de la ventana */
+ 
+}
+
+/* Consultas de medios para ajustar el margen superior en pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .titulo {
+    margin-top: 4vw; /* Margen superior ajustado para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    margin-top: 3vw; /* Margen superior ajustado para dispositivos móviles */
+  }
+}
+
+@media (max-width: 200px) {
+  .titulo {
+    margin-top: 3vw; /* Margen superior ajustado para pantallas muy pequeñas */
+  }
+}
+
+
+.in-put{
+  width: 35%;
+  left: 0; /* Ancla el elemento a la izquierda del contenedor padre */
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3vw;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 670px) {
+  .in-put {
+    font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 30px;
+    font-size: 20px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 4vw; /* Aumenta el margen superior en dispositivos más pequeños */
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  .in-put {
+    font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 30px;
+    font-size: 20px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 4vw; /* Aumenta el margen superior en dispositivos más pequeños */
+  }
+}
+
+@media (max-width: 950px) {
+  .in-put {
+    font-size: 3vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 20px;
+    font-size: 20px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 10vw; /* Aumenta el margen superior en dispositivos más pequeños */
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+  .in-put {
+    font-size: 3vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 20px;
+    font-size: 10px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 3vw; /* Aumenta el margen superior en dispositivos más pequeños */
+  }
+}
+
+@media (max-width: 282px) {
+  .in-put {
+    font-size: 2vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 15px;
+    font-size: 8px;
+    padding: 5px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 2vw; /* Aumenta el margen superior en dispositivos más pequeños */
+  }
+}
+
+.agregar-nombre {
+  
+    font-size: 30px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 4vw;
+    border: #007bff;
+  
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones para el color de fondo y la transformación */
+}
+
+/* Efecto hover para cambiar el color de fondo y aplicar una transformación */
+.agregar-nombre:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón por encima */
+  transform: scale(1.05); /* Aumenta el tamaño del botón ligeramente */
+}
+
+/* Efecto activo para cuando se hace clic en el botón */
+.agregar-nombre:active {
+  background-color: #004494; /* Color de fondo al hacer clic */
+  transform: scale(0.98); /* Reduce ligeramente el tamaño del botón */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 670px) {
+  .agregar-nombre {
+    font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 30px;
+    font-size: 20px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 4vw; /* Aumenta el margen superior en dispositivos más pequeños */
+    color: black;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  .agregar-nombre {
+    font-size: 4vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 30px;
+    font-size: 20px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 4vw; /* Aumenta el margen superior en dispositivos más pequeños */
+    color: black;
+  }
+}
+
+@media (max-width: 400px) {
+  .agregar-nombret {
+    font-size: 3vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 20px;
+    font-size: 10px;
+    padding: 8px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 3vw; /* Aumenta el margen superior en dispositivos más pequeños */
+    color: black;
+  }
+}
+
+@media (max-width: 282px) {
+  .agregar-nombre {
+    font-size: 2vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 15px;
+    font-size: 8px;
+    padding: 5px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 6vw; /* Aumenta el margen superior en dispositivos más pequeños */
+    color: black;
+  }
+}
+
+
+@media (max-width: 240px) {
+  .agregar-nombre {
+    font-size: 2vw; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    height: 15px;
+    font-size: 8px;
+    padding: 5px; /* Menos padding para dispositivos más pequeños */
+    margin-top: 40vw; /* Aumenta el margen superior en dispositivos más pequeños */
+    color: black;
+  }
+}
+
+
+.textos-nombres{
+  font-size: 20px;
+  text-align: left;
+  
+}
+
+
+
+
+.group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.group-item {
+  border: 1px solid rgb(204, 200, 200);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white
+}
+
+
+
+
+
+
+
+.bote {
+  width: 12px; /* Ajusta el tamaño según sea necesario */
+  height: 16px; /* Ajusta el tamaño según sea necesario */
+  float: right;
+  background-color: #ffffff;
+  position: relative;
+  border: #ffffff;
+}
+
+
+
+
+/* Contenedor que alinea los labels e inputs horizontalmente */
+.form-container {
+  margin-top: 3rem;
+  display: flex;               /* Alinea los elementos en una fila */
+  justify-content: center; /* Espacio entre los elementos, puedes ajustar según sea necesario */
+  align-items: center;         /* Centra verticalmente los elementos */
+  margin-bottom: 1rem;         /* Espacio debajo del contenedor */
+}
+
+.ano,
+.mes {
+  display: flex;              /* Alinea los elementos dentro del label en una fila */
+  align-items: center;        /* Centra verticalmente el contenido del label */
+}
+
+.ano label,
+.mes-label {
+  font-size: 2rem;            /* Tamaño de fuente para el texto del label */
+  color: #333;                /* Color del texto del label */
+  margin-right: 0.5rem;       /* Espacio entre el texto y el input */
+}
+
+.ano input,
+.mes input {
+  font-size: 2rem;            /* Tamaño de fuente para el texto del input */
+  padding: 0.5rem;            /* Espacio interno del input */
+  border: 2px solid #bebcbc;  /* Borde ligero del input */
+  border-radius: 10px;        /* Bordes redondeados para el input */
+  outline: none;              /* Elimina el borde de enfoque por defecto */
+  transition: border-color 0.3s; /* Suaviza la transición del color del borde */
+  color: #000000;
+}
+
+.ano input:focus,
+.mes input:focus {
+  border-color: #007bff;      /* Color del borde cuando el input está enfocado */
+  box-shadow: 0 0 0 0.2rem rgba(50, 300, 255, 0.25); /* Sombra de enfoque */
+}
+
+
+/* Estilos para pantallas de 450px o menos */
+@media (max-width: 450px) {
+  .form-container {
+    flex-direction: column;    /* Cambia la dirección de los elementos a columna */
+    align-items: center;       /* Centra horizontalmente los elementos en la columna */
+    gap: 1rem;                 /* Añade espacio entre los elementos en columna */
+  }
+
+  .ano,
+  .mes {
+    flex-direction: column;    /* Cambia la dirección de los elementos a columna */
+    align-items: center;       /* Centra horizontalmente los elementos en la columna */
+    margin-bottom: 1rem;       /* Espacio debajo de cada grupo */
+  }
+
+  .ano label,
+  .mes-label {
+    margin-right: 0;          /* Elimina el margen derecho para una mejor alineación en columna */
+    margin-bottom: 0.5rem;    /* Espacio debajo del texto del label */
+  }
+
+  .ano input,
+  .mes input {
+    width: 100%;              /* Ajusta el ancho del input para que ocupe todo el contenedor */
+    max-width: 300px;         /* Opcional: Limita el ancho máximo del input */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor para los botones */
+.botones-horizontales {
+  display: flex;               /* Alinea los botones en una fila */
+  justify-content: center;    /* Centra los botones horizontalmente en el contenedor */
+  gap: 1rem;                  /* Espacio entre los botones */
+  margin-top: 3rem;           /* Espacio arriba del contenedor */
+}
+
+/* Estilos generales para los botones */
+.botones-horizontales button {
+  font-size: 1rem;            /* Tamaño de fuente para los botones */
+  padding: 0.5rem 1rem;       /* Espacio interno de los botones */
+  border: none;               /* Elimina el borde por defecto */
+  border-radius: 5px;         /* Bordes redondeados para los botones */
+  cursor: pointer;            /* Cambia el cursor a mano cuando pasa sobre el botón */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el color de fondo y el texto */
+}
+
+.guardar-datos-de-la-tabla {
+  font-weight: bold;
+  background-color: yellow;  /* Color de fondo para el botón de guardar datos */
+  color: rgb(0, 0, 0);               /* Color del texto */
+  font-size: 20px;
+}
+
+
+.limpiar-datos-de-la-tabla {
+  font-weight: bold;
+  background-color: blue;  /* Color de fondo para el botón de limpiar datos */
+  color: black;               /* Color del texto */
+}
+
+.guardar-fechas {
+  font-weight: bold;
+  background-color: red;  /* Color de fondo para el botón de guardar fechas */
+  color: rgb(0, 0, 0);               /* Color del texto */
+}
+
+/* Efectos de hover para los botones */
+.botones-horizontales button:hover {
+  opacity: 0.9;               /* Reduce la opacidad del botón al pasar el cursor sobre él */
+}
+
+.botones-horizontales button:focus {
+  outline: none;              /* Elimina el borde de enfoque por defecto */
+}
+
+
+/* Estilos responsivos para pantallas menores a 441px */
+@media (max-width: 441px) {
+  .botones-horizontales {
+    flex-direction: column;  /* Cambia la dirección de los elementos a columna (vertical) */
+    align-items: center;     /* Centra los botones horizontalmente */
+    gap: 1rem;               /* Espacio entre los botones */
+  }
+
+  .botones-horizontales button {
+    width: 100%;             /* Los botones ocupan todo el ancho disponible */
+    font-size: 1.2rem;       /* Tamaño de fuente más grande para una mejor legibilidad */
+    padding: 0.75rem;        /* Mayor espaciado interno para los botones */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  border: 2px solid #ee0c0c;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-container th {
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+/* Estilo para los elementos <select> */
+table select {
+  
+  height: 2.5rem;              /* Ajusta la altura del combobox */
+  width: 14rem;                 /* Ajusta el ancho del combobox */
+  font-size: 1rem;             /* Tamaño de la fuente dentro del combobox */
+  padding: 0.5rem;             /* Espacio interno dentro del combobox */
+  border: 2px solid #bebcbc;   /* Borde ligero del combobox */
+  border-radius: 5px;          /* Bordes redondeados para el combobox */
+  outline: none;               /* Elimina el borde de enfoque por defecto */
+  box-sizing: border-box;      /* Asegura que el padding y el borde se incluyan en el ancho y la altura */
+}
+
+/* Opcional: Ajustar el tamaño de las opciones en el combobox */
+table select option {
+  padding: 1rem;             /* Espacio interno de las opciones */
+}
+
+
+/* Media query para reducir el tamaño de la tabla en un 10% después de 1200 píxeles */
+@media (max-width: 1276px) {
+  table {
+    width: 20%;               /* Reduce el ancho de la tabla en un 10% */
+  }
+}
