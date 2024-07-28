@@ -552,13 +552,13 @@ body {
 
 .limpiar-datos-de-la-tabla {
   font-weight: bold;
-  background-color: blue;  /* Color de fondo para el botón de limpiar datos */
+  background-color: red;  /* Color de fondo para el botón de limpiar datos */
   color: black;               /* Color del texto */
 }
 
 .guardar-fechas {
   font-weight: bold;
-  background-color: red;  /* Color de fondo para el botón de guardar fechas */
+  background-color: blue;  /* Color de fondo para el botón de guardar fechas */
   color: rgb(0, 0, 0);               /* Color del texto */
 }
 
