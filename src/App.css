@@ -797,6 +797,68 @@ table select option {
 
 
 
-.titulo-sugerencias{
-  text-align: center;
+
+
+.sugerencias-container {
+  text-align: center; /* Centra el título y el contenedor de imágenes */
+}
+
+.imagenes-container {
+  display: flex;
+  flex-direction: column; /* Alinea las imágenes verticalmente por defecto */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 20px; /* Espacio entre las imágenes */
+  margin-top: 20px; /* Espacio arriba del contenedor de imágenes */
+}
+
+.imagen-uno,
+.imagen-dos {
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  height: 600; /* Mantiene la proporción de la imagen */
+}
+
+/* Media query para pantallas de 600 píxeles o más */
+@media (min-width: 1200px) {
+  .imagenes-container {
+    flex-direction: row; /* Alinea las imágenes horizontalmente en pantallas más grandes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+  }
+}
+@media (min-width: 599px) {
+  .imagenes-container {
+    flex-direction: row;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+  }
+}
+
+
+.explicacion-container {
+  margin-top: 30px; /* Espacio arriba del cuadro de explicación */
+  padding: 20px; /* Espacio interior del cuadro de explicación */
+  border: 1px solid #ddd; /* Borde del cuadro de explicación */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo del cuadro de explicación */
+  display: inline-block; /* Ajusta el tamaño del cuadro de explicación */
+  text-align: left; /* Alinea el texto a la izquierda */
+  max-width: 600px; /* Limita el ancho máximo del cuadro de explicación */
+}
+
+.explicacion-container h2 {
+  margin-bottom: 15px; /* Espacio abajo del título */
+}
+
+.explicacion-container p {
+  margin-bottom: 10px; /* Espacio abajo de los párrafos */
+}
+
+.explicacion-container ol {
+  margin: 0;
+  padding-left: 20px; /* Espacio a la izquierda de la lista ordenada */
+}
+
+.explicacion-container kbd {
+  background-color: #eee; /* Fondo para la tecla */
+  border-radius: 3px; /* Bordes redondeados para la tecla */
+  padding: 2px 4px; /* Espacio interior de la tecla */
+  font-family: monospace; /* Fuente monoespaciada para la tecla */
 }
