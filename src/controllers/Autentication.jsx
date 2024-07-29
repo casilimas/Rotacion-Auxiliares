@@ -60,7 +60,7 @@ const Authentication = () => {
 
   return (
     <div className="authentication-container">
-      <h1>Autenticación</h1>
+      <h1 className='titulo-autenticacion'>Autenticación</h1>
       <form onSubmit={handleSubmit} className="authentication-form">
         <label htmlFor="authKey" className="authentication-label">
           Introduzca la clave de autenticación:

@@ -1,6 +1,7 @@
 const sugerencias = () => {
     return (
-      <h1>SUGERENCIAS</h1>
+      <h1 className="titulo-sugerencias">SUGERENCIAS EN DESARROLLO</h1>
+      
     );
   };
   
