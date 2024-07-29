@@ -35,6 +35,9 @@ const Sugerencias = () => {
         <p>
           Las imágenes proporcionadas sirven como guía para ayudarlo a identificar las opciones de impresión en la paleta con control p = en la tecla Ctrl+p.
         </p>
+        <p>
+        Para organizar tus datos de manera eficiente, primero crea una nueva carpeta en tu escritorio. Haz clic derecho en un área vacía del escritorio, selecciona <strong>Nuevo</strong> y luego <strong>Carpeta</strong>. Nombra la carpeta algo como <strong>Registro de Datos</strong>. Después, personaliza los documentos o la información que necesites. Una vez que hayas hecho los cambios, guarda una captura de pantalla para registrar lo que has hecho. En Windows, presiona la tecla <strong>PrtScn</strong> para copiar la pantalla y luego pega la imagen en un programa como <strong>Paint</strong> para guardarla en la carpeta que creaste. En macOS, usa <strong>Shift + Command + 4</strong> para capturar la parte de la pantalla que elijas y guarda la imagen en el escritorio, moviéndola luego a la carpeta que preparaste. Esto te ayudará a tener un registro visual y organizado de tus cambios y datos importantes.
+        </p>
       </div>
     </div>
   );
