@@ -9,8 +9,8 @@ import RedirectToExternal from '../controllers/RedirectToExternal';
 const Rutas = () => {
   return (
     <Routes>
-      <Route path="https://casilimas.github.io/Rotacion-Auxiliares/" element={<RedirectToExternal />} /> 
-      <Route path="/Autentication" element={<Authentication />} />
+      <Route path="/" element={<RedirectToExternal />} /> 
+      <Route path="/Rotacion-Auxiliares" element={<Authentication />} />
       <Route path="/Consejos" element={<Consejos />} />
       <Route path="/Sugerencias" element={<Sugerencias />} />
       <Route path="/NavBar" element={<NavBar />} />
