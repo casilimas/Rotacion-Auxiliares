@@ -4,12 +4,12 @@ import Consejos from '../controllers/Consejos';
 import Sugerencias from '../controllers/Sugerencias';
 import NavBar from '../controllers/NavBar';
 import GenerateWeeks from '../controllers/GenerateWeeks';
-import RedirectToExternal from '../controllers/RedirectToExternal';  // Importa el nuevo componente
+import RedirectToExternal from '../controllers/RedirectToExternal';  
 
 const Rutas = () => {
   return (
     <Routes>
-      <Route path="/" element={<RedirectToExternal />} /> 
+      <Route path="https://casilimas.github.io/Rotacion-Auxiliares/" element={<RedirectToExternal />} /> 
       <Route path="/Autentication" element={<Authentication />} />
       <Route path="/Consejos" element={<Consejos />} />
       <Route path="/Sugerencias" element={<Sugerencias />} />
