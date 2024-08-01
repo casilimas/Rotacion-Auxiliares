@@ -71,7 +71,7 @@ const Authentication = () => {
           value={authKey}
           onChange={handleInputChange}
           className="authentication-input"
-          placeholder="Clave de autenticación"
+          placeholder="Clave de autenticación = clave123"
           required
         />
         <button type="submit" className="authentication-button">
