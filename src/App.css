@@ -636,7 +636,7 @@ body {
   font-weight: bold;
   background-color: yellow;  /* Color de fondo para el botón de guardar datos */
   color: rgb(0, 0, 0);               /* Color del texto */
-  font-size: 15px;
+  font-size: 20px;
 }
 
 
@@ -982,20 +982,20 @@ table select option {
 
 
 .combobox-semana {
-  font-size: 9px; /* Tamaño de fuente por defecto */
+  font-size: 11px; /* Tamaño de fuente por defecto */
   font-weight: bold; /* Establece el texto en negrita */
 }
 
 @media (max-width: 600px) {
   .combobox-semana {
-    font-size: 8px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    font-size: 10px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
     font-weight: bold; /* Mantiene el texto en negrita */
   }
 }
 
 @media (max-width: 400px) {
   .combobox-semana {
-    font-size: 7px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    font-size: 9px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
     font-weight: bold; /* Mantiene el texto en negrita */
   }
 }
