@@ -256,6 +256,18 @@ const App = () => {
     localStorage.setItem("selectedYear", selectedYear);
   }, [selectedMonth, selectedYear]);
 
+
+
+
+
+
+
+
+
+
+
+  
+
   return (
     <div>
       <h1 className="titulo">Crear Tabla de Oficiantes</h1>
@@ -318,18 +330,36 @@ const App = () => {
           />
         </label>
       </div>
-
+      
+      
+      
+      
       <div className="botones-horizontales">
-        <button className="guardar-datos-de-la-tabla" onClick={saveWeeksData}>
-          Guardar Datos de las Semanas
-        </button>
-        <button className="guardar-fechas" onClick={saveMonthDates}>
-          Guardar Fechas del Mes
-        </button>
-        <button className="limpiar-datos-de-la-tabla" onClick={clearWeeksData}>
-          Limpiar Datos de las Semanas
-        </button>
-      </div>
+  
+  <button className="guardar-datos-de-la-tabla" onClick={saveWeeksData}>
+    Guardar Datos de las Semanas
+  </button>
+  <button className="guardar-fechas" onClick={saveMonthDates}>
+    Guardar Fechas del Mes
+  </button>
+  <button className="limpiar-datos-de-la-tabla" onClick={clearWeeksData}>
+    Limpiar Datos de las Semanas
+  </button>
+  <input
+    type="text"
+    placeholder="ESCRIBE AQUI EL MES"
+    className="entrada-texto" 
+    value={inputValue}
+    onChange={(e) => setInputValue(e.target.value)} 
+  />
+</div>
+
+
+
+
+
+
+
 
       <div className="table-container">
         <table>

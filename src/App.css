@@ -594,7 +594,7 @@ body {
 
 /* Estilos generales para los botones */
 .botones-horizontales button {
-  font-size: 1rem;            /* Tamaño de fuente para los botones */
+  font-size: 7px;            /* Tamaño de fuente para los botones */
   padding: 0.5rem 1rem;       /* Espacio interno de los botones */
   border: none;               /* Elimina el borde por defecto */
   border-radius: 5px;         /* Bordes redondeados para los botones */
@@ -602,11 +602,41 @@ body {
   transition: background-color 0.3s, color 0.3s; /* Transición suave para el color de fondo y el texto */
 }
 
+
+
+
+
+.entrada-texto {
+  font-size: 16px; /* Asegúrate de que tenga 'px' para definir correctamente el tamaño */
+  text-align: center; /* Centrar el texto dentro del input */
+  padding: 10px; /* Añadir algo de espacio interno */
+  border: 4px solid #f5079296; /* Estilo de borde */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 140px; /* O el ancho que prefieras */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+  box-shadow: 0 4px 10px rgba(0, 59, 252, 0.5); /* Sombra pronunciada */
+  font-weight: bold; /* Hacer el texto más grueso */
+  transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+.entrada-texto:hover {
+  transform: translateY(-10px) scale(1.05); /* Elevar y escalar el input */
+}
+
+
+
+
+
+
+
+
+
+
 .guardar-datos-de-la-tabla {
   font-weight: bold;
   background-color: yellow;  /* Color de fondo para el botón de guardar datos */
   color: rgb(0, 0, 0);               /* Color del texto */
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -621,6 +651,12 @@ body {
   background-color: blue;  /* Color de fondo para el botón de guardar fechas */
   color: rgb(0, 0, 0);               /* Color del texto */
 }
+
+
+
+
+
+
 
 /* Efectos de hover para los botones */
 .botones-horizontales button:hover {
@@ -946,17 +982,20 @@ table select option {
 
 
 .combobox-semana {
-  font-size: 7px; /* Tamaño de fuente por defecto */
+  font-size: 9px; /* Tamaño de fuente por defecto */
+  font-weight: bold; /* Establece el texto en negrita */
 }
 
 @media (max-width: 600px) {
   .combobox-semana {
-    font-size: 6px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    font-size: 8px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    font-weight: bold; /* Mantiene el texto en negrita */
   }
 }
 
 @media (max-width: 400px) {
   .combobox-semana {
-    font-size: 5px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    font-size: 7px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    font-weight: bold; /* Mantiene el texto en negrita */
   }
 }
