@@ -636,7 +636,7 @@ body {
   font-weight: bold;
   background-color: yellow;  /* Color de fondo para el botón de guardar datos */
   color: rgb(0, 0, 0);               /* Color del texto */
-  font-size: 20px;
+  font-size: 15px !important;
 }
 
 
@@ -644,12 +644,14 @@ body {
   font-weight: bold;
   background-color: red;  /* Color de fondo para el botón de limpiar datos */
   color: black;               /* Color del texto */
+  font-size: 15px !important;
 }
 
 .guardar-fechas {
   font-weight: bold;
   background-color: blue;  /* Color de fondo para el botón de guardar fechas */
   color: rgb(0, 0, 0);               /* Color del texto */
+  font-size: 15px !important;
 }
 
 
@@ -660,7 +662,7 @@ body {
 
 /* Efectos de hover para los botones */
 .botones-horizontales button:hover {
-  opacity: 0.9;               /* Reduce la opacidad del botón al pasar el cursor sobre él */
+  opacity: 1;               /* Reduce la opacidad del botón al pasar el cursor sobre él */
 }
 
 .botones-horizontales button:focus {
@@ -678,8 +680,8 @@ body {
 
   .botones-horizontales button {
     width: 100%;             /* Los botones ocupan todo el ancho disponible */
-    font-size: 1.2rem;       /* Tamaño de fuente más grande para una mejor legibilidad */
-    padding: 0.75rem;        /* Mayor espaciado interno para los botones */
+    font-size: 1.8rem;       /* Tamaño de fuente más grande para una mejor legibilidad */
+    padding: 0.50rem;        /* Mayor espaciado interno para los botones */
   }
 }
 
