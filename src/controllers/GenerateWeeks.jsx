@@ -404,7 +404,7 @@ const App = () => {
                           handleSelectChange(weekIndex, posIndex, e)
                         }
                       >
-                        <option value="">Seleccionar</option>
+                        <option value=""></option>
                         {editableNames.map((name, index) => (
                           <option key={index} value={name}>
                             {name}
