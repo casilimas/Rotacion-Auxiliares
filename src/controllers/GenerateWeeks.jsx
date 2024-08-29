@@ -345,14 +345,18 @@ const App = () => {
   <button className="limpiar-datos-de-la-tabla" onClick={clearWeeksData}>
     Limpiar Datos de las Semanas
   </button>
+  
+</div>
+<div className="center-div">
   <input
-    type="text"
-    placeholder="ESCRIBE AQUI EL MES"
-    className="entrada-texto" 
-    value={inputValue}
-    onChange={(e) => setInputValue(e.target.value)} 
+      type="text"
+      placeholder="ESCRIBE AQUÍ EL MES"
+      className="entrada-texto"
+      value={inputValue}
+      onChange={(e) => setInputValue(e.target.value)}
   />
 </div>
+
 
 
 

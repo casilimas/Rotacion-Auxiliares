@@ -606,13 +606,20 @@ body {
 
 
 
+.center-div {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;     /* Centra verticalmente el contenido */
+  height: 60vh;           /* Ajusta la altura según sea necesario */
+}
+
 .entrada-texto {
   font-size: 16px; /* Asegúrate de que tenga 'px' para definir correctamente el tamaño */
   text-align: center; /* Centrar el texto dentro del input */
   padding: 10px; /* Añadir algo de espacio interno */
   border: 4px solid #f5079296; /* Estilo de borde */
   border-radius: 10px; /* Bordes redondeados */
-  width: 140px; /* O el ancho que prefieras */
+  width: 400px; /* O el ancho que prefieras */
   box-sizing: border-box; /* Incluir padding y border en el ancho total */
   box-shadow: 0 4px 10px rgba(0, 59, 252, 0.5); /* Sombra pronunciada */
   font-weight: bold; /* Hacer el texto más grueso */
@@ -620,8 +627,9 @@ body {
 }
 
 .entrada-texto:hover {
-  transform: translateY(-10px) scale(1.05); /* Elevar y escalar el input */
+  transform: translateY(-10px) scale(1.05); /* Elevar y escalar el input al pasar el ratón */
 }
+
 
 
 
@@ -707,7 +715,7 @@ body {
 
 
 .table-container {
-  margin-top: 20%;
+  margin-top: -12%;
   overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
   max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
 }
