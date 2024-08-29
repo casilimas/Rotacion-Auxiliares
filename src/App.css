@@ -616,11 +616,11 @@ body {
 
 /* Contenedor centrado */
 .center-div {
-  display: flex;             /* Flexbox también dentro del contenedor */
+             /* Flexbox también dentro del contenedor */
   justify-content: center;   /* Centra horizontalmente el contenido */
   align-items: center;       /* Centra verticalmente el contenido */
-  height: 60vh;              /* Ajusta la altura según sea necesario */
-  margin-top: 200px;          /* Margen superior */
+  height: 35vh;              /* Ajusta la altura según sea necesario */
+  margin-top: 30px;          /* Margen superior */
   margin-bottom: 10px;       /* Margen inferior */
 }
 
