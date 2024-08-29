@@ -620,7 +620,7 @@ body {
   justify-content: center;   /* Centra horizontalmente el contenido */
   align-items: center;       /* Centra verticalmente el contenido */
   height: 40vh;              /* Ajusta la altura según sea necesario */
-  margin-top: 310px;          /* Margen superior */
+  margin-top: 290px;          /* Margen superior */
   margin-bottom: 10px;       /* Margen inferior */
 }
 
