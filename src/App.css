@@ -606,12 +606,36 @@ body {
 
 
 
-.center-div {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center;     /* Centra verticalmente el contenido */
-  height: 60vh;           /* Ajusta la altura según sea necesario */
+/* Contenedor padre */
+.parent-container {
+  display: flex;             /* Habilita Flexbox */
+  justify-content: center;   /* Centra horizontalmente */
+       /* Centra verticalmente */
+  height: 100vh;             /* Ajusta según sea necesario */
 }
+
+/* Contenedor centrado */
+.center-div {
+  display: flex;             /* Flexbox también dentro del contenedor */
+  justify-content: center;   /* Centra horizontalmente el contenido */
+  align-items: center;       /* Centra verticalmente el contenido */
+  height: 40vh;              /* Ajusta la altura según sea necesario */
+  margin-top: 240px;          /* Margen superior */
+  margin-bottom: 10px;       /* Margen inferior */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .entrada-texto {
   font-size: 16px; /* Asegúrate de que tenga 'px' para definir correctamente el tamaño */
