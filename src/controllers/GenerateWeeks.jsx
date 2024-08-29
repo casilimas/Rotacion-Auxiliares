@@ -347,7 +347,7 @@ const App = () => {
   </button>
   
 </div>
-<div className="parent-container">
+
 <div className="center-div">
   <input
       type="text"
@@ -357,7 +357,7 @@ const App = () => {
       onChange={(e) => setInputValue(e.target.value)}
   />
 </div>
-</div>
+
 
 
 
