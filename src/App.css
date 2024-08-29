@@ -638,13 +638,14 @@ body {
 
 
 .entrada-texto {
-  font-size: 10px; /* Asegúrate de que tenga 'px' para definir correctamente el tamaño */
+  font-size: 16px; /* Asegúrate de que tenga 'px' para definir correctamente el tamaño */
   text-align: center; /* Centrar el texto dentro del input */
   padding: 15px; /* Añadir algo de espacio interno */
   border: 2px solid #f5079296; /* Estilo de borde */
   border-radius: 10px; /* Bordes redondeados */
   width: 400px; /* O el ancho que prefieras */
- 
+  
+  color: #000000;
 
   font-weight: bold; /* Hacer el texto más grueso */
  
